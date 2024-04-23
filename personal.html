@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>Beyond Academia</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="media/favicon.ico"/>
+        <meta charset="utf-8">
+    </head>
+
+    <body class="container body-column">
+        <main>
+
+            <header class="container menu">
+                <a href="index.html"><p>about</p></a>
+                <a href="research.html"><p id="menu-active">research</p></a>
+                 <a href="personal.html"><p id="menu-active">personal</p></a>
+            </header>
+
+            <article>
+
+                <!--
+                <h1>Overview</h1>
+                     <p></p> -->
+
+                <h1>Select Projects</h1>
+
+                
+                <div class="researchitem">
+
+                    <h2>A Metacognitive Approach to
+Out-of-Distribution Detection for Segmentation</h2>
+
+                    <img class="researchicon" src="media/metcog-placeholder.png" alt="METACOG">
+                    <p>Despite outstanding semantic scene segmentation in closed-worlds, deep neural networks segment novel instances poorly, which is required for autonomous agents acting in an open world. To improve out-of-distribution (OOD) detection for segmentation, we introduce a metacognitive approach in the form of a lightweight module that leverages entropy measures, segmetation predictions, and spatial context to characterize the segmentation model’s uncertainty and detect pixel-wise OOD data in real-time. Additionally, our approach incorporates a novel method of generating synthetic OOD data in context with in-distribution data, which we use to fine-tune existing segmentation models with maximum entropy training. This further improves the metacognitive module’s performance without requiring access to OOD data while enabling compatibility with established pre-trained models. Our resulting approach can reliably detect OOD instances in a scene, as shown by state-of-the-art performance on OOD detection for semantic segmentation benchmark</p>
+                    <!-- <h3>Publications</h3> -->
+                    <p><strong>Meghna Gummadi</strong>, David Kent, Karl Schmeckpeper, Eric Eaton <em>"A Metacognitive Approach to
+Out-of-Distribution Detection for Segmentation,"</em> IEEE International Conference on Robotics And Automation (ICRA) 2024 <a href="files/Metacognitive_Approach_to_Out_of_Distribution.pdf" target="blank" download>paper</a>,
+<!--                     <a href="https://drive.google.com/file/d/1bYgt7hrUJb5FyR-y3S1RvJZMV1nHQpW3/view?usp=sharing" target="_blank">recorded presentation</a> -->
+                    </p>
+
+                </div>
+
+                <div class="researchitem">
+
+                    <h2>SHELS: Exclusive Feature Sets for Novelty Detection and Continual Learning without Class Boundaries</h2>
+
+                    <img class="researchicon" src="media/shels_resized.png" alt="SHELS">
+                    <p>While deep neural networks (DNNs) have achieved impressive classification performance in closed-world learning scenarios, they typically fail to generalize to unseen categories in dynamic open-world environments, in which the number of concepts is unbounded. In contrast, human and animal learners have the ability to incrementally update their knowledge by recognizing and adapting to novel observations. In particular, humans characterize concepts via exclusive (unique) sets of essential features, which are used for both recognizing known classes and identifying novelty. Inspired by natural learners, we introduce a Sparse High-level-Exclusive, Low-level-Shared feature representation (SHELS) that simultaneously encourages learning exclusive sets of high-level features and essential, shared low-level features. The exclusivity of the high-level features enables the DNN to automatically detect out-of-distribution (OOD) data, while the efficient use of capacity via sparse low-level features permits accommodating new knowledge. The resulting approach uses OOD detection to perform class-incremental continual learning without known class boundaries. We show that using SHELS for novelty detection results in statistically significant improvements over state-of-the-art OOD detection approaches over a variety of benchmark datasets. Further, we demonstrate that the SHELS model mitigates catastrophic forgetting in a class-incremental learning setting, enabling a combined novelty detection and accommodation framework that supports learning in open-world settings</p>
+                    <!-- <h3>Publications</h3> -->
+                    <p><strong>Meghna Gummadi</strong>, David Kent, Jorge A. Mendez, Eric Eaton <em>"SHELS: Exclusive Feature Sets for Novelty Detection and Continual Learning without Class Boundaries,"</em> Conference on Lifelong Learning Agents (CoLLAs) 2022 <a href="files/SHELS_CoLLA_2022.pdf" target="blank" download>paper</a>,
+                    <a href="https://drive.google.com/file/d/1bYgt7hrUJb5FyR-y3S1RvJZMV1nHQpW3/view?usp=sharing" target="_blank">recorded presentation</a></p>
+
+                </div>
+
+                <div class="researchitem">
+
+                    <h2>CompoSuite : A Compositional Reinforcement Learning Benchmark</h2>
+
+                    <img class="researchicon" src="media/composuite_small.jpg" alt="CNN Output">
+                    <p>We present CompoSuite, an open-source simulated robotic manipulation benchmark for compositional multi-task reinforcement learning (RL). Each CompoSuite task requires a particular robot arm to manipulate one individual object to achieve a task objective while avoiding an obstacle. This compositional definition of the tasks endows CompoSuite with two remarkable properties. First, varying the robot/object/objective/obstacle elements leads to hundreds of RL tasks, each of which requires a meaningfully different behavior. Second, RL approaches can be evaluated specifically for their ability to learn the compositional structure of the tasks. This latter capability to functionally decompose problems would enable intelligent agents to identify and exploit commonalities between learning tasks to handle large varieties of highly diverse problems. We benchmark existing single-task, multi-task, and compositional learning algorithms on various training settings, and assess their capability to compositionally generalize to unseen tasks. Our evaluation exposes the shortcomings of existing RL approaches with respect to compositionality and opens new avenues for investigation.</p>
+                    <!-- <h3>Publications</h3> -->
+                    <p>Jorge A. Medez, Marcel Hussing, <strong>Meghna Gummadi</strong>, Eric Eaton. <em>"CompoSuite : A Compositional Reinforcement Learning Benchmark,"</em> Conference on Lifelong Learning Agents (CoLLAs) 2022. <a href="files/composuite_CoLLA_2022.pdf" target="blank" download>paper</a>, <a href="https://www.youtube.com/watch?v=obBBd0csMEE" target="_blank">recorded presentation</a></p>
+
+                </div>
+
+
+
+            </article>
+
+        </main>
+    </body>
+
+</html>
