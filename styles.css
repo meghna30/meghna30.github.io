@@ -103,3 +103,23 @@ header a, header a:hover, header a:focus, header a:active {
 .researchitem {
     margin-bottom: 2rem;
 }
+
+.personaliconleft {
+    height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.personaliconright {
+    height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 0.25rem;
+}
